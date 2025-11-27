@@ -41,21 +41,28 @@ const OfferSection = () => {
         {offers.map((offer, index) => (
           <article
             key={index}
-            className="w-[50%] border border-[#CCCCCC] flex flex-col items-center p-10 gap-8 rounded-2xl shadow-sm"
+            className="w-[50%] border border-[#CCCCCC] flex flex-col justify-between items-center p-10 gap-8 rounded-2xl shadow-sm"
           >
-            <h3
-              className={`${systemFont} font-bold text-[22px] text-[#42474C]`}
-            >
-              {offer.title}
-            </h3>
+            <div className="flex flex-col items-center gap-8 flex-grow">
+              <h3
+                className={`${systemFont} font-bold text-[22px] text-[#42474C]`}
+              >
+                {offer.title}
+              </h3>
 
-            <img src={offer.image} alt={offer.title} width={200} height={150} />
+              <img
+                src={offer.image}
+                alt={offer.title}
+                width={200}
+                height={150}
+              />
 
-            <p
-              className={`${systemFont} text-[#42474C] text-center text-[15px] leading-relaxed`}
-            >
-              {offer.description}
-            </p>
+              <p
+                className={`${systemFont} text-[#42474C] text-center text-[15px] leading-relaxed`}
+              >
+                {offer.description}
+              </p>
+            </div>
 
             <button
               className={`${offer.button.style} px-6 py-2 rounded-md cursor-pointer font-medium transition-all hover:opacity-90`}
