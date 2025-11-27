@@ -74,7 +74,7 @@ const FooterSection = () => {
               className="text-white border border-[#2E72D2] w-40 mt-6 flex justify-center items-center p-2 gap-2 cursor-pointer"
             >
               <ChevronUpOutline height="24px" width="24px" color="white" />
-              Scroll Up
+              Back to Top
             </button>
           </div>
         </div>
