@@ -10,7 +10,10 @@ const poppins = Poppins({
 
 const HeroSection = () => {
   return (
-    <main className="bg-[url(/images/heroBg.png)] bg-cover bg-center h-screen flex justify-center items-center">
+    <section
+      id="hero"
+      className="bg-[url(/images/heroBg.png)] bg-cover bg-center h-screen flex justify-center items-center"
+    >
       <div className="flex flex-col items-center">
         <h1
           className={`${poppins.className} text-[#2E72D2] font-black text-[70px]`}
@@ -26,7 +29,7 @@ const HeroSection = () => {
           Get Started
         </button>
       </div>
-    </main>
+    </section>
   );
 };
 
