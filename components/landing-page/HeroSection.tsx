@@ -1,6 +1,9 @@
+"use client";
+
 import React from "react";
 import { Poppins } from "next/font/google";
 import { systemFont } from "@/utils/fonts/SystemFonts";
+import { useRouter } from "next/navigation";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -9,6 +12,8 @@ const poppins = Poppins({
 });
 
 const HeroSection = () => {
+  const router = useRouter();
+
   return (
     <section
       id="hero"
@@ -24,6 +29,7 @@ const HeroSection = () => {
           Where Knowledge Meets Opportunity
         </h3>
         <button
+          onClick={() => router.push("/offer")}
           className={`${systemFont} bg-blue-500 text-white w-40 h-13 rounded-2xl mt-2 cursor-pointer`}
         >
           Get Started
